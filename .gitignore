@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+.expo
+./.expo/web/cache
+./.expo/mobile/cache
+./.expo/ios/cache
+./.expo/android/cache

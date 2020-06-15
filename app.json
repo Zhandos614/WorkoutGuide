@@ -1,0 +1,47 @@
+{
+    "expo": {
+        "name": "FitKabDao",
+        "slug": "FitKabDao",
+        "privacy": "unlisted",
+        "facebookAppId": "3000497653315813",
+        "facebookDisplayName": "FitKabDao",
+        "sdkVersion": "36.0.0",
+        "platforms": ["ios", "android", "web"],
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "updates": {
+            "enabled": true,
+            "checkAutomatically": "ON_LOAD",
+            "fallbackToCacheTimeout": 30000
+        },
+        "assetBundlePatterns": ["**/*"],
+        "description": "",
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.fitkabdao.fitkabdao",
+            "buildNumber": "1.0.0"
+        },
+        "android": {
+            "package": "com.fitkabdao.fitkabdao",
+            "versionCode": 1
+        }
+    },
+    "hooks": {
+        "postPublish": [
+            {
+                "file": "sentry-expo/upload-sourcemaps",
+                "config": {
+                    "organization": "FitKabDao",
+                    "project": "fitkabdao-mobile-app-frontend",
+                    "authToken": "6ecf208c24194b0facfe09cf59c90aee0f1f6afd73fd4f63a2deec5f985f1f33"
+                }
+            }
+        ]
+    }
+}
